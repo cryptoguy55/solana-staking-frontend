@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {  
+  min-height: 100vh;
+  background-color: black;
+}
+
+.App {  
+  background-image: url(images/back.jpg);
+  background-size: 100vw;
+  height: 100vh;
+  .nav {
+    display: flex;
+    justify-content: space-around;
+  }  
+  nav {
+    z-index: 1000;
+    background-color: rgba(255,255,255,0.5);
+    display: flex;
+    font-size: 18px;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0px;
+    width: 1200px;
+    margin: 20px auto;
+    border-radius: 100px;
+    img {
+      width: 50px;
+      margin: 0px 30px 0px 20px;
+    }
+  
+    a {
+      padding: 15px;
+      color: black;
+      text-decoration: none;
+    }
+    span {
+      padding: 15px;
+      color: gold;
+    }
+    a:hover {
+      color: red;
+      border-bottom: 3px red solid;
+      padding: 15px 15px 12px;
+    }
+    button {
+      color: white;
+      border-radius: 1000px !important;  
+      font-size: 15px;
+      background-color: #827ae0;
+      background-image: linear-gradient(to right, #827ae0 0%, #c081ed 130%);
+      box-shadow: 0 10px 25px -15px #827ae080;
+      &:hover{
+        background-image: linear-gradient(to right, #c081ed 0%, #827ae0 130%);
+      }
+    }
+    .wallet {
+      position: absolute;
+      top: 10px;
+      z-index: 5;
+      right: 10px;
+    }
+  }
+ 
+}
+
+
+
+.dashboard {
+  width: 100%;
+  padding-top: 100px;
+  img {
+    display: block;
+    margin: 0px auto;
+  }
+  p {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin: 0px;
+  }
+}
+
+.market {
+  padding: 150px 50px 0px;  
+  display: flex;
+  .card {
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 20px;    
+    background-color: rgba(255,255,255,0.5);
+    width: 300px;
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    section {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    footer {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 33px;
+  letter-spacing: 0.160398px;
+  border: 2px solid red;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  &:hover {
+    background-color: red;
+  }
+}
+input {
+  border-radius: 50px;
+  background: #1F263F;
+  border: none;
+  height: 30px;
+  width: 100px;
+  color: white;  
+  padding: 0px 10px;
+}
+ .vault {
+   width: 100%;
+   height: 100vh;
+   background-color: black;
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
+   align-items: center;
+   section {
+    margin-top: 80px;     
+    padding: 50px;
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+    position: relative;
+    background-image: url(images/back.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    & > div {
+      position: absolute;
+      top: 200px;
+      left: calc(50% - 100px);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      color: #22a910;
+      font-size: 30px; 
+      align-items: center;
+      width: 180px;
+      padding: 10px;
+    }
+   }
+  }
+
+  .airdrop {
+    display: flex;
+    padding-top: 150px;
+    justify-content: space-around;
+    section {
+      background-color: rgba(255,255,255,0.5);
+      width: 45%;
+      padding: 20px;
+      font-size: 20px;
+      border-radius: 20px;
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
