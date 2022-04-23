@@ -10,6 +10,7 @@
         "@solana/wallet-adapter-react-ui": "^0.9.5",
         "@solana/wallet-adapter-wallets": "^0.15.3",
         "@solana/web3.js": "^1.36.0",
+        "@types/bs58": "^4.0.1",
         "crypto-browserify": "^3.12.0",
         "node-sass": "^7.0.1",
         "react": "^17.0.2",

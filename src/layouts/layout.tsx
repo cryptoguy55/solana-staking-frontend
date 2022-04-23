@@ -34,7 +34,7 @@ const TodoList: React.FC = () => {
     }
     getBalance()
   }, [])
-  console.log(balance)
+  console.log(publicKey)
   return (
     <div className='App'>
       <div className='nav'>

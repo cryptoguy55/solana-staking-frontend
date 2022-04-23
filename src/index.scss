@@ -18,7 +18,9 @@ code {
 .App {  
   background-image: url(images/back.jpg);
   background-size: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-color: black;
   .nav {
     display: flex;
     justify-content: space-around;
@@ -94,7 +96,10 @@ code {
 .market {
   padding: 150px 50px 0px;  
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   .card {
+    margin-bottom: 20px;
     border-radius: 10px;
     padding: 10px;
     margin-right: 20px;    
@@ -102,16 +107,25 @@ code {
     width: 300px;
     img {
       width: 100%;
+      height: 300px;
       border-radius: 10px;
     }
     section {
+      text-align: center;
       display: flex;
       justify-content: space-between;
+      flex-direction: column;
       padding: 10px;
+      p {
+        height: 40px;
+        margin: 0px
+      }
+      input {
+        width: 200px;
+      }
     }
     footer {
-      display: flex;
-      justify-content: space-around;
+      padding: 0px;
     }
   }
 }
